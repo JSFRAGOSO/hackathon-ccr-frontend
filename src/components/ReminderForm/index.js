@@ -36,7 +36,8 @@ export default function DevForm ({onSubmit}){
       <label htmlFor="title">Título</label>
       <input
        name="title" 
-       id="title" 
+       id="title"
+       placeholder="Beber água"  
        required
        value={title}
        onChange={e => setTitle(e.target.value)}
@@ -46,7 +47,8 @@ export default function DevForm ({onSubmit}){
       <label htmlFor="description">Descrição</label>
       <input 
         name="description" 
-        id="description" 
+        id="description"
+        placeholder="Lembre-se de tomar pelo menos 1L de água por dia" 
         required
         value={description}
         onChange={e => setDescription(e.target.value)}
@@ -58,7 +60,8 @@ export default function DevForm ({onSubmit}){
         <input 
           type="text"
           name="hours" 
-          id="hours" 
+          id="hours"
+          placeholder="11:30"  
           required 
           value = {hours}
           onChange={ e => setHours(e.target.value)}

@@ -10,7 +10,7 @@ aside strong{
   font-size: 20px;
   text-align: center;
   display: block;
-  color: #333;
+  color: #111;
 }
 
 aside form{
@@ -19,6 +19,10 @@ aside form{
 
 aside form .input-block + .input-block{
   margin-top: 20px;
+}
+
+input::placeholder {
+  color: #9e9e9e;
 }
 
 aside form .input-group {
@@ -33,7 +37,7 @@ aside form .input-group .input-block {
 }
 
 aside form .input-block label{
-  color: #ACACAC;
+  color: rgb(2, 2, 2);
   font-size: 14px;
   font-weight: bold;
   display: block;

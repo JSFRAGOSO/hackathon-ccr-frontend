@@ -8,7 +8,7 @@ import './Sidebar.css';
 import './Main.css';
 
 
-function App() {
+function App({history}) {
   const [reminders,setReminder] = useState([])
 
   useEffect(() =>{
@@ -31,7 +31,6 @@ function App() {
     formData.append('hours',hours);
 
     const response = await api.post('/reminders',formData);
-    //const response = await api.post('/reminders', data)
     setReminder([...reminders,response.data] );
   }
   
@@ -43,7 +42,10 @@ function App() {
       </aside>
 
       <main>
-        <h1>Lembretes cadastrados</h1>
+        <div className="main-header">
+          <h1>Lembretes cadastrados</h1>
+          <button onClick={() => history.push('/recomendations')}>Ver recomendações</button>
+        </div>
         <ul>
           {reminders.map(reminder => (
             <ReminderItem key={reminder._id} reminder={reminder}/>

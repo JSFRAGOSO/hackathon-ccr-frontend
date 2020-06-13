@@ -24,6 +24,8 @@ export default function RecomendationForm ({onSubmit}){
     setAddress('')
     setName('')
     setKeyWords('')
+    setLink('')
+    setObservation('');
   }
   return(<form onSubmit={handleSubmit}>
     <div className="input-block">

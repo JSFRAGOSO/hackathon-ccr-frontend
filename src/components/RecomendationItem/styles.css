@@ -1,5 +1,6 @@
 li.rec-item{
-  background: #FFF;
+  background: #444;
+  color: #fff;
   box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.02);
   border-radius: 10px;
   padding: 20px;
@@ -21,7 +22,6 @@ li.rec-item header .rec-info{
 .rec-info strong{
   display: block;
   font-size: 16px;
-  color: #333;
 }
 
 .rec-info span{
@@ -33,24 +33,29 @@ li.rec-item header .rec-info{
 li.rec-item p{
   line-height: 20px;
   font-size: 14px;
-  color: #666;
   margin: 10px 0;
 }
 
 li.rec-item a{
   font-size: 14px;
-  color: #8e4dff;
+  color: #fff;
   margin-top: 10px;
-  text-decoration: none;
 }
 
 li.rec-item a:hover{
-  color: #6e4dff;
+  color: #fff;
 }
 
 .tag-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  color: #1A1919;
+  color: #fff;
+}
+
+.tag-list strong {
+  background: #1A1919;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
 }

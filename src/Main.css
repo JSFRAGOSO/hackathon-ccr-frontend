@@ -17,7 +17,7 @@ main ul{
 
 
 li.dev-item{
-  background: #FFF;
+  background: #444;
   box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.02);
   border-radius: 10px;
   padding: 20px;
@@ -41,7 +41,7 @@ li.dev-item header .user-info{
 .user-info strong{
   display: block;
   font-size: 16px;
-  color: #333;
+  color: #fff;
 }
 
 .user-info span{
@@ -53,13 +53,12 @@ li.dev-item header .user-info{
 li.dev-item p{
   line-height: 20px;
   font-size: 14px;
-  color: #666;
   margin: 10px 0;
 }
 
 li.dev-item a{
   font-size: 14px;
-  color: #8e4dff;
+  color: #fff;
   text-decoration: none;
 }
 

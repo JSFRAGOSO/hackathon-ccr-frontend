@@ -69,6 +69,7 @@ li.dev-item a:hover{
 
 main div.main-header{
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;

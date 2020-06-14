@@ -2,6 +2,7 @@ import React, {useState,useEffect} from 'react';
 import api from './services/api';
 import ReminderItem from './components/ReminderItem'
 import ReminderForm from './components/ReminderForm'
+import chapa from './assets/chapa.png'
 import './global.css';
 import './App.css';
 import './Sidebar.css';
@@ -37,13 +38,16 @@ function App({history}) {
   return (
     <div id="app">
       <aside>
-        <strong>Cadastrar novo lembrete</strong>
+        <div className="logo-header">
+          <img src={chapa} />
+          <strong>Adicione um novo lembrete</strong>
+        </div>
         <ReminderForm onSubmit={handleAddDev}/>
       </aside>
 
       <main>
         <div className="main-header">
-          <h1>Lembretes cadastrados</h1>
+          <h1>Seus Lembretes</h1>
           <button onClick={() => history.push('/recomendations')}>Ver recomendações</button>
         </div>
         <ul>

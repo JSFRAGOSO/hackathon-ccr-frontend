@@ -2,6 +2,7 @@ import React, {useState,useEffect} from 'react';
 import api from './services/api';
 import RecomendationItem from './components/RecomendationItem'
 import RecomendationForm from './components/RecomendationForm'
+import chapa from './assets/chapa.png'
 import './global.css';
 import './App.css';
 import './Sidebar.css';
@@ -28,13 +29,16 @@ function Recomendations({history}) {
   return (
     <div id="app">
       <aside>
-        <strong>Cadastrar nova Recomendação</strong>
+        <div className="logo-header">
+          <img src={chapa} />
+          <strong>Adicione uma nova Recomendação</strong>
+        </div>
         <RecomendationForm onSubmit={handleAddRecomendation}/>
       </aside>
 
       <main>
         <div className="main-header">
-          <h1>Locais cadastrados</h1>
+          <h1>Suas Recomendações</h1>
           <button onClick={() => history.push('/')}>Lembretes</button>
         </div>
         <ul>

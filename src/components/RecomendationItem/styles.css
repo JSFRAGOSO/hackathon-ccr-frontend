@@ -1,7 +1,7 @@
 li.rec-item{
   background: #FFF;
   box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.02);
-  border-radius: 2px;
+  border-radius: 10px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -46,4 +46,11 @@ li.rec-item a{
 
 li.rec-item a:hover{
   color: #6e4dff;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: #1A1919;
 }

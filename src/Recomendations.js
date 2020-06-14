@@ -39,7 +39,7 @@ function Recomendations({history}) {
       <main>
         <div className="main-header">
           <h1>Suas Recomendações</h1>
-          <button onClick={() => history.push('/')}>Lembretes</button>
+          <button onClick={() => history.push('/')}>Ver lembretes</button>
         </div>
         <ul>
           {recomendations.map(recomendations => (
